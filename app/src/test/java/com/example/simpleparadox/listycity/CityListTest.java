@@ -93,4 +93,13 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testUpdateProvince() {
+        City city = new City("Calgary", "Manitoba");
+
+        city.setProvince("Alberta");
+
+        assertEquals(city.getProvinceName(), "Alberta");
+    }
 }
